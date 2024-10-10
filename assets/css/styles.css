@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Ubuntu';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 400;
     src: local('Ubuntu'), url(http://example.com/fonts/ubuntu.woff) format('woff');
@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
-    font-family: 'Ubuntu', "times new roman", times, serif;
+    font-family: sans-serif, "times new roman", times, serif;
 }
 
 header {
@@ -65,4 +65,36 @@ footer {
 
 footer h2 {
     font-size: 1.5vh;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100vw;
+    color: beige;
+}
+
+.contenedor>.click-contenedor {
+    background-color: blueviolet;
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 1vh;
+    margin-right: 9vw;
+    padding: 3vh .9vw;
+    border-radius: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px white;
+    gap: 40px;
+
+}
+
+.contenedor>.click-contenedor>svg{
+    margin: auto .3vw;
+    transition-duration: .3s;
+    height: 25px;
+    width: 25px;
 }
